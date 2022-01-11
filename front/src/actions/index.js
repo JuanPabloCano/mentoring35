@@ -1,10 +1,8 @@
-
-
 export const fetchRandom = (state) => async (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    const response = await fetch(`http://localhost:8080/r`, {
+    const response = await fetch(`https://mentoring35.herokuapp.com/r`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +18,7 @@ export const fetchRandomNumber = (state) => async (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    const response = await fetch(`http://localhost:8080/r/random`, {
+    const response = await fetch(`https://mentoring35.herokuapp.com/r/random`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

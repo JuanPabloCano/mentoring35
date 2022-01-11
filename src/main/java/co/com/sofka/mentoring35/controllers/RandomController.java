@@ -21,12 +21,11 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mentoring35-86d68.web.app")
 @RequestMapping(value = "/r")
-
 public class RandomController {
 
-    private RandomRepository randomRepository;
+    private final RandomRepository randomRepository;
 
     @Autowired
     public RandomController(RandomRepository randomRepository) {
